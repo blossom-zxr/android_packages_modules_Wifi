@@ -3178,6 +3178,7 @@ public class WifiServiceImpl extends BaseWifiService {
                     .c(Binder.getCallingUid())
                     .flush();
         }
+        return null; /*
         if ((getSupportedFeatures() & WifiManager.WIFI_FEATURE_LINK_LAYER_STATS) == 0) {
             try {
                 listener.onWifiActivityEnergyInfo(null);
@@ -3219,6 +3220,7 @@ public class WifiServiceImpl extends BaseWifiService {
                 stats.rx_time,
                 stats.on_time_scan,
                 rxIdleTimeMillis);
+        */
     }
 
     /**

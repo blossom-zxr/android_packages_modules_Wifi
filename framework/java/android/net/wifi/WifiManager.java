@@ -4198,7 +4198,7 @@ public class WifiManager {
      * @return true if this adapter supports advanced power/performance counters
      */
     public boolean isEnhancedPowerReportingSupported() {
-        return isFeatureSupported(WIFI_FEATURE_LINK_LAYER_STATS);
+        return false;
     }
 
     /**

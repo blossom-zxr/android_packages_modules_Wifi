@@ -408,6 +408,7 @@ public class WifiStaIfaceAidlImpl implements IWifiStaIface {
     @Nullable
     public WifiLinkLayerStats getLinkLayerStats() {
         final String methodStr = "getLinkLayerStats";
+        return null; /*
         synchronized (mLock) {
             try {
                 if (!checkIfaceAndLogFailure(methodStr)) return null;
@@ -423,6 +424,7 @@ public class WifiStaIfaceAidlImpl implements IWifiStaIface {
             }
             return null;
         }
+        */
     }
 
     /**
@@ -1282,10 +1284,6 @@ public class WifiStaIfaceAidlImpl implements IWifiStaIface {
         if (hasCapability(halFeatureSet,
                 android.hardware.wifi.IWifiStaIface.FeatureSetMask.TDLS_OFFCHANNEL)) {
             features |= WifiManager.WIFI_FEATURE_TDLS_OFFCHANNEL;
-        }
-        if (hasCapability(halFeatureSet,
-                android.hardware.wifi.IWifiStaIface.FeatureSetMask.LINK_LAYER_STATS)) {
-            features |= WifiManager.WIFI_FEATURE_LINK_LAYER_STATS;
         }
         if (hasCapability(halFeatureSet,
                 android.hardware.wifi.IWifiStaIface.FeatureSetMask.RSSI_MONITOR)) {

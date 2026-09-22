@@ -909,10 +909,6 @@ public class WifiStaIfaceHidlImpl implements IWifiStaIface {
             features |= WifiManager.WIFI_FEATURE_TDLS_OFFCHANNEL;
         }
         if (hasCapability(caps,
-                android.hardware.wifi.V1_0.IWifiStaIface.StaIfaceCapabilityMask.LINK_LAYER_STATS)) {
-            features |= WifiManager.WIFI_FEATURE_LINK_LAYER_STATS;
-        }
-        if (hasCapability(caps,
                 android.hardware.wifi.V1_0.IWifiStaIface.StaIfaceCapabilityMask.RSSI_MONITOR)) {
             features |= WifiManager.WIFI_FEATURE_RSSI_MONITOR;
         }

@@ -298,8 +298,10 @@ public class WifiStaIface implements WifiHal.WifiInterface {
      */
     @Nullable
     public WifiLinkLayerStats getLinkLayerStats() {
+	return null; /*
         return validateAndCall("getLinkLayerStats", null,
                 () -> mWifiStaIface.getLinkLayerStats());
+        */
     }
 
     /**
